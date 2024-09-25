@@ -7,7 +7,61 @@
     <title>Document</title>
   </head>
   <body>
-    Widget
+    <main class="chat-container">
+      <div class="chat-header">
+        <p class="chat-name">Chat Name</p>
+        <button class="reset-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-refresh"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#2c3e50"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" />
+            <path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="chat-body">
+        <div class="chat-message chat-message--bot">
+          Hello! How can I help you today?
+        </div>
+        <div class="chat-message chat-message--user">Hello!</div>
+      </div>
+
+      <div class="chat-footer">
+        <input class="chat-input" type="text" placeholder="Type a message" />
+        <button class="send-message-button disabled">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-send"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#2c3e50"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 14l11 -11" />
+            <path
+              d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5"
+            />
+          </svg>
+        </button>
+      </div>
+    </main>
+
     <script src="index.js"></script>
   </body>
 </html>
